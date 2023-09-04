@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request,"contentmanagementtool.html")
+    return HttpResponse('Hi this is from AWS EC2 Django')
 
 def add(request):
     a = request.GET["n1"]
